@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:putahe/utils.dart';
+import 'package:putahe/homepage/homepage.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});
@@ -169,6 +170,8 @@ class Login extends StatelessWidget {
                     ),
                     child: MaterialButton(
                       onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => const MyHomepage()));
                       },
                       child: const Text(
                         "LOGIN",
